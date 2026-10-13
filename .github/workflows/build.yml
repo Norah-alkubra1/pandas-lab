@@ -28,6 +28,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          args: >
-            -Dsonar.organization=se4221-gg
-            -Dsonar.projectKey=se4221-gg_sonar-lab-demo
+       args: "-Dsonar.organization=se4221-gg -Dsonar.projectKey=se4221-gg_sonar-lab-demo -Dsonar.branch.name=master"
